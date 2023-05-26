@@ -1,7 +1,7 @@
 %{
 #include <stdlib.h>
 #include "ast.h"
-#include "t.tab.h"
+#include "lrparser.tab.h"
 int type;
 
 %}
