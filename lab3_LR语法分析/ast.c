@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "ast.h"
-#include "t.tab.h"
+#include "lrparser.tab.h"
 
 
 past newAstNode(){
