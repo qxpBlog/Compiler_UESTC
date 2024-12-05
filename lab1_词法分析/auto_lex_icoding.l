@@ -83,7 +83,9 @@ ID            [a-zA-Z_]+[a-zA-Z0-9_]*
  
 "float" 	{yylval.id_name="float";return Y_FLOAT;}
  
-[0-9]+ 		{yylval.int_value=atoi(yytext);return num_INT;}
+[-]?[0-9]+ 		{yylval.int_value=atoi(yytext);return num_INT;}
+
+0[xX][0-9]+ 		{yylval.int_value=atoi(yytext);return num_INT;}
 
 "0xa"		{yylval.int_value=10;return num_INT;}
 
